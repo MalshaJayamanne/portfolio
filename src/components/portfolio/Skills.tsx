@@ -1,0 +1,60 @@
+import { motion } from "motion/react";
+
+const groups = [
+  { title: "Languages", items: ["Python", "JavaScript", "TypeScript", "C/C++"] },
+  { title: "Web Development", items: ["React", "Node.js", "Express", "HTML/CSS"] },
+  { title: "Databases", items: ["MySQL", "PostgreSQL", "MongoDB", "SQL"] },
+  { title: "Data Analytics & AI", items: ["Power BI", "Excel", "Pandas", "NumPy", "Scikit-learn", "TensorFlow"] },
+  { title: "Tools", items: ["Git", "GitHub"] },
+];
+
+const marquee = [
+  "React", "Node.js", "Python", "TensorFlow", "MongoDB",
+  "TypeScript", "PostgreSQL", "Power BI", "Pandas", "Scikit-learn", "MySQL", "Git",
+];
+
+export function Skills() {
+  return (
+    <section id="skills" className="py-24 md:py-32 relative">
+      <div className="container mx-auto px-4">
+        <div className="max-w-2xl mb-14">
+          <p className="text-sm uppercase tracking-[0.25em] text-accent mb-4">Skills</p>
+          <h2 className="text-4xl md:text-5xl font-bold">
+            The <span className="text-gradient">stack</span> I build with.
+          </h2>
+          <p className="mt-4 text-muted-foreground text-lg">
+            A modern toolkit spanning AI, web platforms, and systems engineering.
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {groups.map((g, i) => (
+            <motion.div
+              key={g.title}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.06 }}
+              className="glass-card rounded-2xl p-6 group relative overflow-hidden"
+            >
+              <div className="absolute -top-12 -right-12 size-32 rounded-full bg-[var(--gradient-neon)] opacity-0 group-hover:opacity-20 blur-2xl transition-opacity" />
+              <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-4">
+                {g.title}
+              </h3>
+              <ul className="flex flex-wrap gap-2">
+                {g.items.map((s) => (
+                  <li
+                    key={s}
+                    className="text-sm rounded-lg px-3 py-1.5 bg-white/5 border border-white/10 hover:border-primary/50 hover:text-primary transition"
+                  >
+                    {s}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
