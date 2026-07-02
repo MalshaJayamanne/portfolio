@@ -17,7 +17,6 @@ const interests = [
   { title: "Explainable AI (XAI)", icon: Eye, desc: "Making deep learning models transparent and interpretable." },
   { title: "Deep Learning", icon: Network, desc: "Neural network architectures for complex patterns." },
   { title: "Data Analytics", icon: BarChart3, desc: "Data pipelines, predictive modeling, and business insights." },
-  { title: "Computer Vision", icon: Camera, desc: "Object detection, classification, and image parsing." },
   { title: "Intelligent Software Systems", icon: Code2, desc: "Self-adaptive and autonomous software systems." },
 ];
 
@@ -28,10 +27,10 @@ export function ResearchInterests() {
         <div className="max-w-2xl mb-14">
           <p className="text-sm uppercase tracking-[0.25em] text-primary mb-4">Focus</p>
           <h2 className="text-4xl md:text-5xl font-bold">
-            Research <span className="text-gradient">Interests</span>
+            My <span className="text-gradient">Interests</span>
           </h2>
           <p className="mt-4 text-muted-foreground text-lg">
-            Domains I am eager to explore further, build upon, and contribute to through academic research and engineering.
+            Domains I am eager to explore further, build upon, and contribute to through engineering.
           </p>
         </div>
 
