@@ -5,8 +5,6 @@ const courses = [
   "Machine Learning",
   "Artificial Intelligence",
   "Software Reliability",
-  "High Performance Computing",
-  "Database Systems",
   "Distributed Systems",
   "UI/UX Engineering",
   "Data Structures & Algorithms",
