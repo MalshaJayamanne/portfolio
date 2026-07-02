@@ -102,7 +102,7 @@ export function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className="mt-2 text-center rounded-xl py-3 text-sm font-medium bg-[var(--gradient-neon)] text-white light:text-black hover:opacity-90 transition"
               >
-                Hire me
+                Open for colabarations
               </a>
             </motion.div>
           )}

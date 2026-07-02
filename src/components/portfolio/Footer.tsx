@@ -6,7 +6,7 @@ export function Footer() {
           © {new Date().getFullYear()} <span className="text-gradient font-semibold">Malsha Jayamanne</span>.
         </p>
         <p>
-          Built with ❤️ using React, TypeScript & Tailwind CSS.
+          Built with ❤️ by Malsha Jayamanne.
         </p>
       </div>
     </footer>
