@@ -13,22 +13,6 @@ import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Malsha Jayamanne - Developer" },
-      {
-        name: "description",
-        content:
-          "Portfolio of Malsha Jayamanne — Software Engineering undergraduate building AI, full-stack, and intelligent systems.",
-      },
-      { property: "og:title", content: "Malsha Jayamanne — Software Engineering" },
-      {
-        property: "og:description",
-        content:
-          "Selected projects across AI/ML, Data Analytics, and full stack systems.",
-      },
-    ],
-  }),
   component: Index,
 });
 
