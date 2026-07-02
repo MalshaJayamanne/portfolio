@@ -3,10 +3,10 @@ import { ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import sliceHub from "@/assets/proj-slicehub.jpg";
 import horizonTravel from "@/assets/proj-travel.jpg";
-import adSync from "@/assets/proj-adsync.png";
-import iplDashboard from "@/assets/proj-ipl.png";
+import adSync from "@/assets/proj-adsync.jpg";
+import iplDashboard from "@/assets/proj-ipl.jpg";
 import medicareAssist from "@/assets/proj-medicare.jpg";
-import resumeAnalyzer from "@/assets/proj-resume-analyzer.png";
+import resumeAnalyzer from "@/assets/proj-resume-analyzer.jpg";
 import fashionClassifier from "@/assets/proj-fashion.jpg";
 import projPortfolio from "@/assets/proj-portfolio.jpg";
 
@@ -112,7 +112,7 @@ export function Projects() {
           </a>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.map((p, i) => (
             <motion.article
               key={p.title}
