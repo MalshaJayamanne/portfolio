@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "start": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
