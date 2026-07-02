@@ -1,11 +1,34 @@
 import { motion } from "motion/react";
 
 const groups = [
-  { title: "Languages", items: ["Python", "JavaScript", "TypeScript", "C/C++"] },
-  { title: "Web Development", items: ["React", "Node.js", "Express", "HTML/CSS"] },
-  { title: "Databases", items: ["MySQL", "PostgreSQL", "MongoDB", "SQL"] },
-  { title: "Data Analytics & AI", items: ["Power BI", "Excel", "Pandas", "NumPy", "Scikit-learn", "TensorFlow"] },
-  { title: "Tools", items: ["Git", "GitHub"] },
+  {
+    title: "Programming Languages",
+    items: ["Python", "JavaScript", "TypeScript", "C/C++"],
+  },
+  {
+    title: "Frontend",
+    items: ["React", "HTML", "CSS", "Tailwind CSS"],
+  },
+  {
+    title: "Backend",
+    items: ["Node.js", "Express.js", "REST APIs", "JWT Authentication"],
+  },
+  {
+    title: "Databases",
+    items: ["MongoDB", "MySQL", "PostgreSQL"],
+  },
+  {
+    title: "AI / Machine Learning",
+    items: ["TensorFlow", "Scikit-learn", "Pandas", "NumPy", "CNN", "Deep Learning", "XAI"],
+  },
+  {
+    title: "Data Analytics",
+    items: ["Power BI", "Excel", "SQL", "Data Visualization", "Data Cleaning"],
+  },
+  {
+    title: "Tools",
+    items: ["Git", "GitHub", "VS Code", "Postman"],
+  },
 ];
 
 const marquee = [

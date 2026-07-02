@@ -5,15 +5,17 @@ import { TechMarquee } from "@/components/portfolio/TechMarquee";
 import { About } from "@/components/portfolio/About";
 import { Skills } from "@/components/portfolio/Skills";
 import { Projects } from "@/components/portfolio/Projects";
-import { Experience } from "@/components/portfolio/Experience";
 import { Education } from "@/components/portfolio/Education";
+import { TechnicalHighlights } from "@/components/portfolio/TechnicalHighlights";
+import { ResearchInterests } from "@/components/portfolio/ResearchInterests";
+import { Certifications } from "@/components/portfolio/Certifications";
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Malsha Jayamanne — Developer" },
+      { title: "Malsha Jayamanne - Developer" },
       {
         name: "description",
         content:
@@ -39,8 +41,10 @@ function Index() {
       <Skills />
       <TechMarquee />
       <Projects />
-      <Experience />
       <Education />
+      <TechnicalHighlights />
+      <ResearchInterests />
+      <Certifications />
       <Contact />
       <Footer />
     </main>

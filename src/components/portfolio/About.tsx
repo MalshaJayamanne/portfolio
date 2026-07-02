@@ -24,11 +24,7 @@ export function About() {
             <span className="text-gradient">code, analytics & intelligence</span>.
           </h2>
           <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-            I'm a Software Engineering undergraduate interested in Data Analytics, Full Stack
-            Development, Machine Learning, and UI/UX designing. I enjoy building
-            scalable applications and intelligent software solutions that solve
-            real problems, from neural networks for image classification to
-            production-ready web platforms.
+            I'm a Software Engineering undergraduate passionate about Data Analytics, Artificial Intelligence, Machine Learning, and Full Stack Development. I enjoy building scalable applications and intelligent software solutions that transform data into meaningful insights and solve real-world problems.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
             Currently exploring Explainable AI, Deep Learning, and Design-led

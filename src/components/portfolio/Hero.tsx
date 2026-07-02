@@ -49,11 +49,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="mt-6 max-w-xl text-lg text-muted-foreground"
           >
-            Software Engineering undergraduate passionate about{" "}
-            <span className="text-foreground">AI/ML</span>,{" "}
-            <span className="text-foreground">Data Analytics</span>,{" "}
-            <span className="text-foreground">Full Stack Development</span>, and
-            intelligent systems that ship to production.
+            Software Engineering Undergraduate specializing in AI/ML, Data Analytics, and Full Stack Development. Passionate about designing intelligent, scalable software solutions that solve real-world problems.
           </motion.p>
 
           <motion.div
@@ -75,7 +71,7 @@ export function Hero() {
               className="inline-flex items-center gap-2 rounded-xl px-5 py-3 font-medium glass hover:bg-white/5 transition"
             >
               <Download className="size-4" />
-              Resume
+              Download Resume
             </a>
             <div className="flex items-center gap-2 ml-1">
               {[
@@ -104,8 +100,8 @@ export function Hero() {
           >
             {[
               { k: "15+", v: "Projects" },
-              { k: "3+", v: "Years coding" },
-              { k: "8+", v: "Technologies" },
+              { k: "3+", v: "Years Coding" },
+              { k: "15+", v: "Technologies" },
             ].map((s) => (
               <div key={s.v} className="glass-card rounded-xl p-4">
                 <div className="text-2xl font-bold text-gradient">{s.k}</div>
@@ -135,7 +131,7 @@ export function Hero() {
             </div>
             <div className="absolute -top-4 -right-4 glass-card rounded-xl px-3 py-2 flex items-center gap-2 text-xs">
               <Sparkles className="size-3.5 text-primary" />
-              DA/AI/ML Enthusiast
+              AI/ML Enthusiast
             </div>
             <div className="absolute -bottom-4 -left-4 glass-card rounded-xl px-3 py-2 text-xs">
               <span className="text-accent">●</span> Full Stack

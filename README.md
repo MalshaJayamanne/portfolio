@@ -1,4 +1,4 @@
-# Personal Developer Portfolio 🚀
+# Personal Dev Portfolio 
 
 A modern, high-performance personal developer portfolio built with a bleeding-edge tech stack to showcase projects, skills, and experience with a stunning UI.
 
@@ -71,6 +71,3 @@ npm run start
 - `hooks/` - Custom React hooks.
 - `assets/` - Static files like images and icons.
 
-## 📄 License
-
-This project is open-source and available under the ISC License.

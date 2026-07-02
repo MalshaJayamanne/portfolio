@@ -8,8 +8,19 @@ import iplDashboard from "@/assets/proj-ipl.png";
 import medicareAssist from "@/assets/proj-medicare.jpg";
 import resumeAnalyzer from "@/assets/proj-resume-analyzer.png";
 import fashionClassifier from "@/assets/proj-fashion.jpg";
+import projPortfolio from "@/assets/proj-portfolio.jpg";
 
 const projects = [
+  {
+    title: "Developer Portfolio",
+    category: "Full Stack Web",
+    desc: "Designed and developed this modern, responsive portfolio showcasing projects, technical skills, and credentials. Built with a sleek dark theme, glassmorphism, and smooth interactive animations.",
+    tech: ["React.js", "TypeScript", "Tailwind CSS", "Vite"],
+    image: projPortfolio,
+    accent: "cyan",
+    github: "https://github.com/MalshaJayamanne/portfolio",
+    live: "#",
+  },
   {
     title: "Slice Hub",
     category: "Full Stack Web",
@@ -24,14 +35,14 @@ const projects = [
     title: "Horizon Travel (Travel Planner)",
     category: "Full Stack Web",
     desc: "Built a travel planning application that allows users to explore destinations and organize trip itineraries. Integrated interactive UI for travel suggestions and planning workflows.",
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs"],
+    tech: ["Next.js 16", "TypeScript", "Prisma 7", "PostgreSQL", "NextAuth.js", "Gemini AI", "Leaflet", "Recharts", "Cloudinary"],
     image: horizonTravel,
     accent: "blue",
     github: "https://github.com/MalshaJayamanne",
     live: "#",
   },
   {
-    title: "AdSync",
+    title: "AdSync (UI/UX Design)",
     category: "Backend & Systems",
     desc: "Developed an advertising synchronization system to manage and streamline ad content distribution across platforms. Implemented backend logic for handling ad scheduling and data management.",
     tech: ["Node.js", "Express.js", "MongoDB", "REST APIs"],
@@ -47,7 +58,7 @@ const projects = [
     tech: ["Power BI", "Excel", "Data Analytics"],
     image: iplDashboard,
     accent: "blue",
-    github: "https://github.com/MalshaJayamanne",
+    powerbi:"",
     live: "#",
   },
   {
@@ -143,14 +154,16 @@ export function Projects() {
                   ))}
                 </ul>
                 <div className="mt-5 flex items-center gap-3">
-                  <a
-                    href={p.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs font-medium hover:text-primary transition"
-                  >
-                    <FaGithub className="size-3.5" /> Code
-                  </a>
+                  {p.github && (
+                    <a
+                      href={p.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-medium hover:text-primary transition"
+                    >
+                      <FaGithub className="size-3.5" /> Code
+                    </a>
+                  )}
                   {p.live && p.live !== "#" && (
                     <a
                       href={p.live}

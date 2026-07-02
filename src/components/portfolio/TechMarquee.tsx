@@ -4,7 +4,6 @@ import {
   FaNodeJs,
   FaPython,
   FaDocker,
-  FaAws,
   FaGitAlt,
 } from "react-icons/fa";
 import {
@@ -25,6 +24,12 @@ const SiPowerbi = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+const SiMicrosoftazure = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <path d="M13.605 0L1.248 17.242h8.977L22.752 0zM0 18.667l4.135 5.333h14.595L8.358 18.667z" />
+  </svg>
+);
+
 const techStack = [
   { name: "React", icon: FaReact, color: "text-sky-400" },
   { name: "Next.js", icon: SiNextdotjs, color: "text-foreground" },
@@ -40,7 +45,7 @@ const techStack = [
   { name: "Node.js", icon: FaNodeJs, color: "text-green-500" },
   { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-400" },
   { name: "Docker", icon: FaDocker, color: "text-sky-500" },
-  { name: "AWS", icon: FaAws, color: "text-amber-400" },
+  { name: "Azure", icon: SiMicrosoftazure, color: "text-sky-500" },
   { name: "Git", icon: FaGitAlt, color: "text-red-500" },
 ];
 
