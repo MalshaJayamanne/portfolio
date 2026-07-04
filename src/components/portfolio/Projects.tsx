@@ -11,20 +11,11 @@ import fashionClassifier from "@/assets/proj-fashion.jpg";
 import projPortfolio from "@/assets/proj-portfolio.jpg";
 
 const projects = [
+
   {
-    title: "Developer Portfolio",
+    title: "Slice Hub - Food Ordering platform",
     category: "Full Stack Web",
-    desc: "Designed and developed this modern, responsive portfolio showcasing projects, technical skills, and credentials. Built with a sleek dark theme, glassmorphism, and smooth interactive animations.",
-    tech: ["React.js", "TypeScript", "Tailwind CSS", "Vite"],
-    image: projPortfolio,
-    accent: "cyan",
-    github: "https://github.com/MalshaJayamanne/portfolio",
-    live: "#",
-  },
-  {
-    title: "Slice Hub",
-    category: "Full Stack Web",
-    desc: "Developed a web-based platform for managing and browsing food/slice ordering services with a clean user interface. Focused on improving user experience and efficient product navigation.",
+    desc: "Developed a web-based platform for managing and browsing food ordering services with a clean user interface.",
     tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT Auth", "Gemini API"],
     image: sliceHub,
     accent: "cyan",
@@ -32,9 +23,9 @@ const projects = [
     live: "#",
   },
   {
-    title: "Horizon Travel (Travel Planner)",
+    title: "Horizon Travel - Travel Planner",
     category: "Full Stack Web",
-    desc: "Built a travel planning application that allows users to explore destinations and organize trip itineraries. Integrated interactive UI for travel suggestions and planning workflows.",
+    desc: "Built a travel planning application that allows users to explore destinations and organize trip itineraries.",
     tech: ["Next.js 16", "TypeScript", "Prisma 7", "PostgreSQL", "NextAuth.js", "Gemini AI", "Leaflet", "Recharts", "Cloudinary"],
     image: horizonTravel,
     accent: "blue",
@@ -44,9 +35,29 @@ const projects = [
   {
     title: "AdSync (UI/UX Design)",
     category: "Backend & Systems",
-    desc: "Developed an advertising synchronization system to manage and streamline ad content distribution across platforms. Implemented backend logic for handling ad scheduling and data management.",
-    tech: ["Node.js", "Express.js", "MongoDB", "REST APIs"],
+    desc: "Contributed with designing an advertising synchronization system to manage and streamline ad content distribution across platforms.",
+    tech: ["Figma", "Next.js 16", "PostgreSQL", "TypeScript", "Vercel", "Git"],
     image: adSync,
+    accent: "cyan",
+    github: "https://github.com/MalshaJayamanne",
+    live: "#",
+  },
+  {
+    title: "AI Resume Analyzer",
+    category: "AI & NLP",
+    desc: "Developed an AI-based tool to analyze resumes and provide scoring and suggestions. Used NLP techniques to extract and evaluate key resume sections.",
+    tech: ["Python", "NLP", "Scikit-learn", "Flask", "HTML/CSS"],
+    image: resumeAnalyzer,
+    accent: "blue",
+    github: "https://github.com/MalshaJayamanne",
+    live: "#",
+  },
+  {
+    title: "Fashion Image Classifier",
+    category: "AI / Computer Vision",
+    desc: "Convolutional Neural Network classifying 10 clothing categories and real-time inference dashboard with confidence visualization.",
+    tech: ["Python", "TensorFlow", "CNN", "Streamlit"],
+    image: fashionClassifier,
     accent: "cyan",
     github: "https://github.com/MalshaJayamanne",
     live: "#",
@@ -54,7 +65,7 @@ const projects = [
   {
     title: "IPL Dashboard (Power BI)",
     category: "Data Analytics",
-    desc: "Designed an interactive dashboard to analyze IPL cricket data from 2008–2025. Visualized key insights such as player performance, season stats, venues, 4s/6s analysis, and points table.",
+    desc: "An interactive dashboard to analyze IPL cricket data from 2008–2025. Visualized key insights.",
     tech: ["Power BI", "Excel", "Data Analytics"],
     image: iplDashboard,
     accent: "blue",
@@ -72,30 +83,20 @@ const projects = [
     live: "#",
   },
   {
-    title: "AI Resume Analyzer",
-    category: "AI & NLP",
-    desc: "Developed an AI-based tool to analyze resumes and provide scoring and improvement suggestions. Used NLP techniques to extract and evaluate key resume sections.",
-    tech: ["Python", "NLP", "Scikit-learn", "Flask", "HTML/CSS"],
-    image: resumeAnalyzer,
-    accent: "blue",
-    github: "https://github.com/MalshaJayamanne",
-    live: "#",
-  },
-  {
-    title: "Fashion Image Classifier",
-    category: "AI / Computer Vision",
-    desc: "Convolutional Neural Network classifying 10 clothing categories with 93% accuracy. Features a real-time inference dashboard with confidence visualization.",
-    tech: ["Python", "TensorFlow", "CNN", "Streamlit"],
-    image: fashionClassifier,
+    title: "Developer Portfolio",
+    category: "My Portfolio",
+    desc: "Developed this modern, responsive portfolio showcasing projects, technical skills, and credentials. Built with a sleek dark theme, glassmorphism, and smooth interactive animations.",
+    tech: ["React.js", "TypeScript", "Tailwind CSS", "Vite"],
+    image: projPortfolio,
     accent: "cyan",
-    github: "https://github.com/MalshaJayamanne",
+    github: "https://github.com/MalshaJayamanne/portfolio",
     live: "#",
   },
 ];
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 md:py-32">
+    <section id="projects" className="py-12 md:py-32">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap items-end justify-between gap-6 mb-14">
           <div className="max-w-2xl">

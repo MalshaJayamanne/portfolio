@@ -42,7 +42,7 @@ const educationHistory = [
 
 export function Education() {
   return (
-    <section id="education" className="py-24 md:py-32">
+    <section id="education" className="py-12 md:py-32">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 items-start">
           {/* Left Column: Heading and Coursework */}
@@ -51,7 +51,7 @@ export function Education() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="glass-card rounded-3xl p-8"
+            className="glass-card rounded-3xl p-5 sm:p-8"
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="size-11 grid place-items-center rounded-xl bg-[var(--gradient-neon)] glow-cyan">
@@ -89,7 +89,7 @@ export function Education() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="glass-card rounded-3xl p-8"
+            className="glass-card rounded-3xl p-5 sm:p-8"
           >
             <div className="space-y-8 relative before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-px before:bg-white/10 light:before:bg-black/10">
               {educationHistory.map((edu, i) => (
