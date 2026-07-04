@@ -62,13 +62,13 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="relative glass-card rounded-3xl p-8 md:p-14 overflow-hidden"
+          className="relative glass-card rounded-3xl p-4 sm:p-8 md:p-14 overflow-hidden"
         >
           <div className="absolute -top-32 -right-32 size-80 rounded-full bg-[var(--gradient-neon)] opacity-25 blur-3xl" />
           <div className="absolute -bottom-32 -left-32 size-80 rounded-full bg-accent opacity-20 blur-3xl" />
 
           <div className="grid lg:grid-cols-2 gap-12 relative">
-            <div>
+            <div className="min-w-0">
               <p className="text-sm uppercase tracking-[0.25em] text-primary mb-4">Contact</p>
               <h2 className="text-4xl md:text-5xl font-bold leading-tight">
                 Let's build <span className="text-gradient">something</span> together.
@@ -90,12 +90,12 @@ export function Contact() {
                     href={c.href}
                     target={c.href.startsWith("http") ? "_blank" : undefined}
                     rel={c.href.startsWith("http") ? "noreferrer" : undefined}
-                    className="flex items-center gap-3 group"
+                    className="flex items-center gap-3 group min-w-0 w-full"
                   >
-                    <span className="size-10 grid place-items-center rounded-xl glass group-hover:border-primary/40 transition">
+                    <span className="size-10 shrink-0 grid place-items-center rounded-xl glass group-hover:border-primary/40 transition">
                       <c.icon className="size-4" />
                     </span>
-                    <span className="text-muted-foreground group-hover:text-foreground transition">
+                    <span className="text-muted-foreground group-hover:text-foreground transition text-sm sm:text-base break-all">
                       {c.label}
                     </span>
                   </a>
