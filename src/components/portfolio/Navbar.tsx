@@ -24,7 +24,7 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-6 inset-x-0 z-50 transition-all duration-300 px-4 max-w-[95%] md:max-w-[80%] lg:max-w-[75%] mx-auto`}
+      className={`fixed top-6 inset-x-0 z-50 transition-all duration-300 px-4 max-w-[94%] md:max-w-[90%] lg:max-w-[80%] xl:max-w-[1400px] mx-auto`}
     >
       <div className="w-full relative">
         <nav

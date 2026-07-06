@@ -142,29 +142,6 @@
     letter-spacing: -0.02em;
   }
 
-  /* Custom standard container for Tailwind v4 */
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    max-width: 94%;
-  }
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-      max-width: 90%;
-    }
-  }
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-      max-width: 75%;
-    }
-  }
 
   /* Custom premium scrollbar */
   ::-webkit-scrollbar {
@@ -183,6 +160,37 @@
 }
 
 @layer components {
+  /* Page-width container — override Tailwind v4's container utility */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 94%;
+  }
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      max-width: 90%;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1400px;
+    }
+  }
+
   .glass {
     background: var(--glass-bg);
     backdrop-filter: blur(16px) saturate(140%);
@@ -245,3 +253,20 @@
 .animate-float { animation: float 6s ease-in-out infinite; }
 .animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
 .animate-marquee { animation: marquee 30s linear infinite; }
+
+/* ─── Unlayered container override ─────────────────────────────────────────
+   Unlayered rules beat ALL @layer rules (base, components, utilities).
+   This guarantees 80% max-width on desktop regardless of Tailwind internals.
+─────────────────────────────────────────────────────────────────────────── */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1400px;
+  }
+}
