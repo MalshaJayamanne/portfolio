@@ -86,7 +86,7 @@ export function Hero() {
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="../../assets/MalshaJayamanne_CV.pdf"
+              href="/../assets/MalshaJayamanne_CV.pdf"
               download
               className="inline-flex items-center gap-2 rounded-xl px-5 py-3 font-medium glass hover:bg-white/5 transition"
             >
