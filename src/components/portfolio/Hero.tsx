@@ -82,16 +82,16 @@ export function Hero() {
               href="#projects"
               className="group inline-flex items-center gap-2 rounded-xl px-5 py-3 font-medium bg-[var(--gradient-neon)] text-white light:text-black glow-cyan hover:opacity-95 transition"
             >
-              View projects
+              View Projects
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="/resume.pdf"
+              href="../../assets/MalshaJayamanne_CV.pdf"
               download
               className="inline-flex items-center gap-2 rounded-xl px-5 py-3 font-medium glass hover:bg-white/5 transition"
             >
               <Download className="size-4" />
-              Download Resume
+              Download CV
             </a>
             <div className="flex items-center justify-center gap-2 ml-0 lg:ml-1 mt-2 sm:mt-0">
               {[
