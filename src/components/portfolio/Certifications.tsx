@@ -3,9 +3,9 @@ import { Award, ExternalLink } from "lucide-react";
 
 const certs = [
   { name: "Google Analytics", by: "Google · 2026" },
-  { name: "Web Designing for Beginners", by: "OpenMora · 2023" },
-  { name: "Machince Learning and Advanced AI Techniques", by: "Alison · 2026" },
+  { name: "Web Designing for Beginners", by: "University of Moratuwa · 2023" },
   { name: "Miscrosoft Azure for Deployments", by: "Microsoft · 2026" },
+  { name: "Machince Learning and Advanced AI Techniques", by: "Alison · 2026" },
 ];
 
 export function Certifications() {
