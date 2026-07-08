@@ -5,6 +5,7 @@ const certs = [
   { name: "Google Analytics", by: "Google · 2026" },
   { name: "Web Designing for Beginners", by: "OpenMora · 2023" },
   { name: "Machince Learning and Advanced AI Techniques", by: "Alison · 2026" },
+  { name: "Miscrosoft Azure for Deployments", by: "Microsoft · 2026" },
 ];
 
 export function Certifications() {
