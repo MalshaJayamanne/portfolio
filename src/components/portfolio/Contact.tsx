@@ -79,7 +79,7 @@ export function Contact() {
               </p>
               <div className="mt-8 space-y-3">
                 {[
-                  { icon: Mail, label: "malshasulakshan4@gmail.com", href: "mailto:malshasulakshan4@gmail.com" },
+                  { icon: Mail, label: "jayamannemalsha@gmail.com", href: "mailto:jayamannemalsha@gmail.com" },
                   { icon: Phone, label: "+94 70 426 8110", href: "tel:+94704268110" },
                   { icon: MapPin, label: "Ja Ela, Sri Lanka", href: "#" },
                   { icon: FaGithub, label: "github.com/MalshaJayamanne", href: "https://github.com/MalshaJayamanne" },
