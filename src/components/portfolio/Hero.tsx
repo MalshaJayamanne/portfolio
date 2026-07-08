@@ -170,7 +170,7 @@ export function Hero() {
                 <span className="size-2 rounded-full bg-emerald-500 animate-pulse" />
                 <span className="text-muted-foreground whitespace-nowrap">
                   <span className="sm:hidden">Available</span>
-                  <span className="hidden sm:inline">Available for internships & projects</span>
+                  <span className="hidden sm:inline">Available for interns & projects</span>
                 </span>
               </div>
             </div>
