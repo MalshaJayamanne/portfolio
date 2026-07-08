@@ -74,8 +74,6 @@ export function Contact() {
                 Let's build <span className="text-gradient">something</span> together.
               </h2>
               <p className="mt-5 text-muted-foreground text-lg">
-                I'm currently open to internships, industry, freelance projects, and
-                research collaboration. Drop a message and I'll reply within 24h.
               </p>
               <div className="mt-8 space-y-3">
                 {[
