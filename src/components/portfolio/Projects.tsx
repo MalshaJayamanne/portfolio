@@ -8,6 +8,7 @@ import iplDashboard from "@/assets/proj-ipl.jpg";
 import medicareAssist from "@/assets/proj-medicare.jpg";
 import resumeAnalyzer from "@/assets/proj-resume-analyzer.jpg";
 import fashionClassifier from "@/assets/proj-fashion.jpg";
+import taxiFare from "@/assets/proj-taxi.png";
 import projPortfolio from "@/assets/proj-portfolio.jpg";
 
 const projects = [
@@ -16,7 +17,7 @@ const projects = [
     title: "Slice Hub - Food Ordering platform",
     category: "Full Stack Web",
     desc: "Developed a web-based platform for managing and browsing food ordering services with a clean user interface.",
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT Auth", "Gemini API"],
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux Toolkit", "JWT Auth", "REST APIs"],
     image: sliceHub,
     accent: "cyan",
     github: "https://github.com/MalshaJayamanne/slice-hub",
@@ -26,7 +27,7 @@ const projects = [
     title: "Horizon Travel - Travel Planner",
     category: "Full Stack Web",
     desc: "Built a travel planning application that allows users to explore destinations and organize trip itineraries.",
-    tech: ["Next.js 16", "TypeScript", "Prisma 7", "PostgreSQL", "NextAuth.js", "Gemini AI", "Leaflet", "Recharts", "Cloudinary"],
+    tech: ["Next.js 16", "TypeScript", "Prisma ORM", "PostgreSQL", "NextAuth.js", "Gemini AI", "Superbase", "Tailwind CSS", "REST APIs"],
     image: horizonTravel,
     accent: "blue",
     github: "https://github.com/MalshaJayamanne",
@@ -34,12 +35,22 @@ const projects = [
   },
   {
     title: "AdSync (UI/UX Design)",
-    category: "Backend & Systems",
+    category: "E-commerce system",
     desc: "Contributed with designing an advertising synchronization system to manage and streamline ad content distribution across platforms.",
-    tech: ["Figma", "Next.js 16", "PostgreSQL", "TypeScript", "Vercel", "Git"],
+    tech: ["Figma", "Next.js 16", "PostgreSQL", "Drizzle ORM", "TypeScript", "Tailwind CSS", "Vercel", "Git"],
     image: adSync,
     accent: "cyan",
     github: "https://github.com/MalshaJayamanne",
+    live: "#",
+  },
+  {
+    title: "MediCare Assist – AI Health Risk Monitor",
+    category: "AI & Machine Learning",
+    desc: "Built an AI-powered system to predict health risks for Diabetes, Stroke, and Heart Disease. Integrated machine learning models with a web interface for real-time predictions.",
+    tech: ["Python", "FastAPIs", "Jupyter Notebook", "Scikit-learn", "Pandas", "NumPy", "Next.js", "TypeScript", "Tailwind CSS"],
+    image: medicareAssist,
+    accent: "cyan",
+    github: "https://github.com/MalshaJayamanne/health-monitor",
     live: "#",
   },
   {
@@ -56,10 +67,20 @@ const projects = [
     title: "Fashion Image Classifier",
     category: "AI / Computer Vision",
     desc: "Convolutional Neural Network classifying 10 clothing categories and real-time inference dashboard with confidence visualization.",
-    tech: ["Python", "TensorFlow", "CNN", "Streamlit"],
+    tech: ["Python", "TensorFlow", "Keras", "Flask", "CNN", "Scikit-learn", "Matplolib"],
     image: fashionClassifier,
     accent: "cyan",
-    github: "https://github.com/MalshaJayamanne",
+    github: "https://github.com/fashion-classificaion",
+    live: "#",
+  },
+  {
+    title: "Taxi Fare Intelligence",
+    category: "AI / Machine Learning",
+    desc: "A machine learning dashboard designed to predict, explain, and audit taxi and tuk-tuk fares in Colombo, Sri Lanka.",
+    tech: ["Python", "React", "XGBoost", "Pandas", "FastAPI", "Scikit-learn", "Matplolib"],
+    image: taxiFare,
+    accent: "yellow",
+    github: "https://github.com/taxi-fare",
     live: "#",
   },
   {
@@ -69,28 +90,18 @@ const projects = [
     tech: ["Power BI", "Excel", "Data Analytics"],
     image: iplDashboard,
     accent: "blue",
-    powerbi:"",
-    live: "#",
-  },
-  {
-    title: "MediCare Assist – AI Health Risk Monitor",
-    category: "AI & Machine Learning",
-    desc: "Built an AI-powered system to predict health risks for Diabetes, Stroke, and Heart Disease. Integrated machine learning models with a web interface for real-time predictions.",
-    tech: ["Python", "Scikit-learn", "Pandas", "NumPy", "React.js", "Node.js", "MongoDB"],
-    image: medicareAssist,
-    accent: "cyan",
-    github: "https://github.com/MalshaJayamanne/health-monitor",
+    powerbi: "",
     live: "#",
   },
   {
     title: "Developer Portfolio",
     category: "My Portfolio",
     desc: "Developed this modern, responsive portfolio showcasing projects, technical skills, and credentials. Built with a sleek dark theme, glassmorphism, and smooth interactive animations.",
-    tech: ["React.js", "TypeScript", "Tailwind CSS", "Vite"],
+    tech: ["React", "TypeScript", "Tailwind CSS", "Radix UI", "Vite", "Vercel"],
     image: projPortfolio,
     accent: "cyan",
     github: "https://github.com/MalshaJayamanne/portfolio",
-    live: "#",
+    live: "https://malshajayamanne.dev",
   },
 ];
 
@@ -134,9 +145,8 @@ export function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
                 <div
-                  className={`absolute top-3 left-3 text-[10px] uppercase tracking-wider px-2.5 py-0.5 rounded-full glass ${
-                    p.accent === "cyan" ? "text-accent" : "text-primary"
-                  }`}
+                  className={`absolute top-3 left-3 text-[10px] uppercase tracking-wider px-2.5 py-0.5 rounded-full glass ${p.accent === "cyan" ? "text-accent" : "text-primary"
+                    }`}
                 >
                   {p.category}
                 </div>
@@ -172,7 +182,7 @@ export function Projects() {
                       rel="noreferrer"
                       className="inline-flex items-center gap-1.5 text-xs font-medium hover:text-accent transition"
                     >
-                      <ExternalLink className="size-3.5" /> Live demo
+                      <ExternalLink className="size-3.5" /> Live website
                     </a>
                   )}
                 </div>

@@ -3,15 +3,15 @@ import { motion } from "motion/react";
 const groups = [
   {
     title: "Programming Languages",
-    items: ["Python", "JavaScript", "TypeScript", "C/C++"],
+    items: ["Python", "JavaScript", "TypeScript", "C/C++", "SQL"],
   },
   {
     title: "Frontend",
-    items: ["React", "HTML", "CSS", "Tailwind CSS"],
+    items: ["React", "Next", "HTML", "CSS", "Tailwind CSS"],
   },
   {
     title: "Backend",
-    items: ["Node.js", "Express.js", "REST APIs", "JWT Authentication"],
+    items: ["Node.js", "Express.js", "Flask", "REST APIs", "JWT Authentication"],
   },
   {
     title: "Databases",
@@ -19,21 +19,21 @@ const groups = [
   },
   {
     title: "AI / Machine Learning",
-    items: ["TensorFlow", "Scikit-learn", "Pandas", "NumPy", "CNN", "Deep Learning", "XAI"],
+    items: ["Jupyter Notebook", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "CNN", "Deep Learning", "XAI", "Keras"],
   },
   {
     title: "Data Analytics",
-    items: ["Power BI", "Excel", "SQL", "Data Visualization", "Data Cleaning"],
+    items: ["Power BI", "Excel", "SQL", "EDA", "Data Visualizations"],
   },
   {
     title: "Tools",
-    items: ["Git", "GitHub", "VS Code", "Postman"],
+    items: ["Git", "GitHub", "VS Code", "Pycharm", "Postman", "Superbase", "Vercel"],
   },
 ];
 
 const marquee = [
-  "React", "Node.js", "Python", "TensorFlow", "MongoDB",
-  "TypeScript", "PostgreSQL", "Power BI", "Pandas", "Scikit-learn", "MySQL", "Git",
+  "React", "Node.js", "Python", "Jupyter", "TensorFlow", "MongoDB", "Next", "JavaScript", "Git", "VSCode",
+  "TypeScript", "C", "C++", "PostgreSQL", "Power BI", "Pandas", "Scikit-learn", "MySQL", "Flask", "HTML5", "CSS", "Tailwind CSS"
 ];
 
 export function Skills() {
