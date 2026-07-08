@@ -96,7 +96,7 @@ export function Hero() {
             <div className="flex items-center justify-center gap-2 ml-0 lg:ml-1 mt-2 sm:mt-0">
               {[
                 { icon: FaGithub, href: "https://github.com/MalshaJayamanne" },
-                { icon: FaLinkedin, href: "https://www.linkedin.com/in/malsha-jayamanne-957048302/" },
+                { icon: FaLinkedin, href: "https://www.linkedin.com/in/malsha-jayamanne/" },
                 { icon: Mail, href: "mailto:malshasulakshan4@gmail.com" },
               ].map(({ icon: Icon, href }, i) => (
                 <a
