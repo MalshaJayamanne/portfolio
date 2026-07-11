@@ -10,6 +10,8 @@ import resumeAnalyzer from "@/assets/proj-resume-analyzer.jpg";
 import fashionClassifier from "@/assets/proj-fashion.jpg";
 import taxiFare from "@/assets/proj-taxi.png";
 import projPortfolio from "@/assets/proj-portfolio.jpg";
+import movieMind from "@/assets/proj-movie.png";
+import customerSeg from "@/assets/proj-customer.png";
 
 const projects = [
 
@@ -37,7 +39,7 @@ const projects = [
     title: "AdSync (UI/UX Design)",
     category: "E-commerce system",
     desc: "Contributed with designing an advertising synchronization system to manage and streamline ad content distribution across platforms.",
-    tech: ["Figma", "Next.js 16", "PostgreSQL", "Drizzle ORM", "TypeScript", "Tailwind CSS", "Vercel", "Git"],
+    tech: ["Figma", "Next.js 16", "PostgreSQL", "Drizzle ORM", "TypeScript", "Tailwind CSS", "Vercel", "Git", "Group Project"],
     image: adSync,
     accent: "cyan",
     github: "https://github.com/MalshaJayamanne",
@@ -74,12 +76,22 @@ const projects = [
     live: "#",
   },
   {
+    title: "MovieMind AI - Movie Recommendation System",
+    category: "ML /  Data Science",
+    desc: "Developed a content-based movie recommendation system using NLP and Cosine Similarity.",
+    tech: ["Python", "Flask", "Scikit-learn", "NumPy", "Matplolib", "JavaScript", "HTML", "CSS"],
+    image: movieMind,
+    accent: "cyan",
+    github: "https://github.com/MalshaJayamanne/movie-recommendaion-dashboard",
+    live: "#",
+  },
+  {
     title: "Taxi Fare Intelligence",
     category: "AI / Machine Learning",
     desc: "A machine learning dashboard designed to predict, explain, and audit taxi and tuk-tuk fares in Colombo, Sri Lanka.",
     tech: ["Python", "React", "XGBoost", "Pandas", "FastAPI", "Scikit-learn", "Matplolib"],
     image: taxiFare,
-    accent: "yellow",
+    accent: "blue",
     github: "https://github.com/taxi-fare",
     live: "#",
   },
@@ -92,6 +104,16 @@ const projects = [
     accent: "blue",
     powerbi: "",
     live: "#",
+  },
+  {
+    title: "Customer Segmentation",
+    category: "Data Science",
+    desc: "This project segments customers into meaningful groups using Machine Learning techniques and visual analytics.",
+    tech: ["Python", "Pandas", "NumPy", "Streamlit", "Seaborn", "Scikit-learn", "Matplolib"],
+    image: customerSeg,
+    accent: "blue",
+    github: "https://github.com/MalshaJayamanne/customer-segmentation",
+    live: "https://customer-segmentation-mj.streamlit.app",
   },
   {
     title: "Developer Portfolio",
