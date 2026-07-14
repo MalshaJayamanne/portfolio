@@ -33,7 +33,7 @@ const projects = [
     image: horizonTravel,
     accent: "blue",
     github: "https://github.com/MalshaJayamanne",
-    live: "#",
+    live: "https://horizon-travel-38db.onrender.com",
   },
   {
     title: "AdSync (UI/UX Design)",
