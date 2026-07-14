@@ -43,7 +43,7 @@ const projects = [
     image: adSync,
     accent: "cyan",
     github: "https://github.com/MalshaJayamanne",
-    live: "#",
+    live: "https://adsync-rho.vercel.app",
   },
   {
     title: "MediCare Assist – AI Health Risk Monitor",
