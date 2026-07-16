@@ -73,10 +73,13 @@
 
   --glass-bg: oklch(1 0 0 / 0.045);
   --glass-border: oklch(1 0 0 / 0.11);
+
+  --tag-bg: oklch(1 0 0 / 0.15);
+  --tag-border: oklch(1 0 0 / 0.2);
 }
 
 .light {
-  --background: oklch(0.96 0.01 245);
+  --background: oklch(0.988 0.003 245);
   --foreground: oklch(0.06 0.01 245);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.06 0.01 245);
@@ -84,14 +87,14 @@
   --popover-foreground: oklch(0.06 0.01 245);
   --primary: oklch(0.52 0.22 245);
   --primary-foreground: oklch(0.98 0.005 245);
-  --secondary: oklch(0.92 0.015 245);
+  --secondary: oklch(0.94 0.01 245);
   --secondary-foreground: oklch(0.06 0.01 245);
-  --muted: oklch(0.92 0.01 245);
+  --muted: oklch(0.94 0.01 245);
   --muted-foreground: oklch(0.32 0.02 245);
   --accent: oklch(0.52 0.18 200);
   --accent-foreground: oklch(0.98 0.005 245);
-  --border: oklch(0.06 0.01 245 / 15%);
-  --input: oklch(0.06 0.01 245 / 15%);
+  --border: oklch(0.06 0.01 245 / 12%);
+  --input: oklch(0.06 0.01 245 / 12%);
   --ring: oklch(0.52 0.22 245);
 
   --gradient-radial: radial-gradient(circle at 15% 15%, oklch(0.52 0.22 245 / 0.14), transparent 55%),
@@ -102,6 +105,9 @@
 
   --glass-bg: oklch(1 0 0 / 0.9);
   --glass-border: oklch(0.06 0.01 245 / 0.15);
+
+  --tag-bg: oklch(0 0 0 / 0.07);
+  --tag-border: oklch(0 0 0 / 0.12);
 }
 
 .light .glass-card {
@@ -196,6 +202,12 @@
     backdrop-filter: blur(16px) saturate(140%);
     -webkit-backdrop-filter: blur(16px) saturate(140%);
     border: 1px solid var(--glass-border);
+  }
+  .tag-label {
+    background: var(--tag-bg);
+    backdrop-filter: blur(12px) saturate(140%);
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+    border: 1px solid var(--tag-border);
   }
   .glass-card {
     background: linear-gradient(135deg, oklch(1 0 0 / 0.06), oklch(1 0 0 / 0.02));

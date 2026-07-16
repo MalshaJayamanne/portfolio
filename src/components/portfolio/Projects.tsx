@@ -129,7 +129,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-12 md:py-32">
+    <section id="projects" className="py-12 md:py-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap items-end justify-between gap-6 mb-14">
           <div className="max-w-2xl">
@@ -146,7 +146,7 @@ export function Projects() {
           </a>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((p, i) => (
             <motion.article
               key={p.title}
@@ -167,7 +167,7 @@ export function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
                 <div
-                  className={`absolute top-3 left-3 text-[10px] uppercase tracking-wider px-2.5 py-0.5 rounded-full glass ${p.accent === "cyan" ? "text-accent" : "text-primary"
+                  className={`absolute top-3 left-3 text-[10px] uppercase tracking-wider px-2.5 py-0.5 rounded-full tag-label ${p.accent === "cyan" ? "text-accent" : "text-primary"
                     }`}
                 >
                   {p.category}
@@ -180,7 +180,7 @@ export function Projects() {
                   {p.tech.map((t) => (
                     <li
                       key={t}
-                      className="text-[10px] px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-muted-foreground"
+                      className="text-[10px] px-2 py-0.5 rounded-md tag-label text-muted-foreground"
                     >
                       {t}
                     </li>

@@ -10,7 +10,7 @@ const certs = [
 
 export function Certifications() {
   return (
-    <section id="certifications" className="py-24 md:py-32">
+    <section id="certifications" className="py-12 md:py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mb-14">
           <p className="text-sm uppercase tracking-[0.25em] text-accent mb-4">Credentials</p>

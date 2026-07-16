@@ -3,7 +3,7 @@ import { GraduationCap, BarChart3, Eye, Zap } from "lucide-react";
 
 export function ResearchInterests() {
   return (
-    <section id="research" className="py-12 md:py-32">
+    <section id="research" className="py-12 md:py-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 24 }}

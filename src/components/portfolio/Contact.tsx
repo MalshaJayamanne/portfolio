@@ -55,7 +55,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 md:py-32">
+    <section id="contact" className="py-12 md:py-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -144,9 +144,10 @@ export function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3.5 font-medium bg-[var(--gradient-neon)] text-white light:text-black glow-cyan hover:opacity-95 transition disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="group w-full inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3.5 font-medium bg-[var(--gradient-neon)] text-white light:text-black glow-cyan hover:shadow-glow-cyan hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                 >
-                  {isSubmitting ? "Sending..." : "Send message"} <Send className="size-4" />
+                  {isSubmitting ? "Sending..." : "Send message"}{" "}
+                  <Send className="size-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" />
                 </button>
               </form>
             </div>

@@ -36,7 +36,7 @@ export function Hero() {
     setText(roles[index].substring(0, subIndex));
   }, [subIndex, index]);
   return (
-    <section id="top" className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <section id="top" className="relative pt-36 pb-12 lg:pt-32 lg:pb-16 overflow-hidden">
       <div
         className="absolute inset-0 -z-10 opacity-30"
         style={{
@@ -48,7 +48,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 -z-10 grid-bg" />
 
-      <div className="container mx-auto px-4 grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
+      <div className="container mx-auto px-4 grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-6 items-center">
         <div className="order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left">
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
@@ -119,7 +119,7 @@ export function Hero() {
             className="mt-12 grid grid-cols-3 max-w-md gap-2.5 w-full"
           >
             {[
-              { k: "15+", v: "Projects" },
+              { k: "10+", v: "Projects" },
               { k: "3+", v: "Years Coding" },
               { k: "15+", v: "Tech" },
             ].map((s) => (
@@ -135,7 +135,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative justify-self-center lg:justify-self-end order-1 lg:order-2 flex flex-col items-center"
+          className="relative justify-self-center lg:justify-self-center order-1 lg:order-2 flex flex-col items-center"
         >
           <div className="absolute -inset-8 bg-[var(--gradient-neon)] opacity-30 blur-3xl rounded-full animate-pulse-glow" />
           <div className="relative animate-float flex flex-col items-center">
@@ -166,7 +166,7 @@ export function Hero() {
                 />
               </div>
               {/* Available Badge on Avatar Border */}
-              <div className="absolute -top-4 -right-4 glass-card rounded-xl px-3 py-1.5 flex items-center gap-2 text-xs font-medium">
+              <div className="absolute -top-4 -right-4 tag-label rounded-xl px-3 py-1.5 flex items-center gap-2 text-xs font-medium">
                 <span className="size-2 rounded-full bg-emerald-500 animate-pulse" />
                 <span className="text-muted-foreground whitespace-nowrap">
                   <span className="sm:hidden">Available</span>

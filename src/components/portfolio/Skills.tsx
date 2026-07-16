@@ -38,7 +38,7 @@ const marquee = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-12 md:py-32 relative">
+    <section id="skills" className="py-12 md:py-20 relative">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mb-14">
           <p className="text-sm uppercase tracking-[0.25em] text-accent mb-4">Skills</p>
@@ -68,7 +68,7 @@ export function Skills() {
                 {g.items.map((s) => (
                   <li
                     key={s}
-                    className="text-sm rounded-lg px-3 py-1.5 bg-white/5 border border-white/10 hover:border-primary/50 hover:text-primary transition"
+                    className="text-sm rounded-lg px-3 py-1.5 tag-label hover:border-primary/50 hover:text-primary transition"
                   >
                     {s}
                   </li>
