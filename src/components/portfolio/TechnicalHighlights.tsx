@@ -15,7 +15,7 @@ const highlights = [
 
 export function TechnicalHighlights() {
   return (
-    <section id="highlights" className="py-24 md:py-32">
+    <section id="highlights" className="py-12 md:py-20">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 items-center">
           {/* Left Side: Summary */}

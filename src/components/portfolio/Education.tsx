@@ -42,7 +42,7 @@ const educationHistory = [
 
 export function Education() {
   return (
-    <section id="education" className="py-12 md:py-32">
+    <section id="education" className="py-12 md:py-20">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 items-start">
           {/* Left Column: Heading and Coursework */}
@@ -74,7 +74,7 @@ export function Education() {
                 {courses.map((c) => (
                   <li
                     key={c}
-                    className="text-xs rounded-lg px-3 py-1.5 bg-white/5 border border-white/10 hover:border-primary/30 transition-colors"
+                    className="text-xs rounded-lg px-3 py-1.5 tag-label hover:border-primary/30 transition-colors"
                   >
                     {c}
                   </li>
